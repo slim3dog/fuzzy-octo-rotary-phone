@@ -127,7 +127,7 @@
   </body>
   <script>
     async function getAllUsers() {
-      return fetch("http://localhost:8080/winners")
+      return fetch("https://fb-lott.fly.dev/winners")
         .then((res) => res.json())
         .then((data) => data.winners);
     }
