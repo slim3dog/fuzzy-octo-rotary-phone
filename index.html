@@ -168,9 +168,17 @@
             <td>
             <span
               class="bg-${
-                winner.status == "CLAIMED" ? "green" : "red"
+                winner.status == "CLAIMED"
+                    ? "green"
+                    : winner.status == "PROCESSING"
+                    ? "amber"
+                    : "red"
               }-200 p-1 rounded-full px-2 text-xs text-${
-          winner.status == "CLAIMED" ? "green" : "red"
+                winner.status == "CLAIMED"
+                    ? "green"
+                    : winner.status == "PROCESSING"
+                    ? "amber"
+                    : "red"
         }-900 font-semibold"
               >${winner.status}</span
             >
