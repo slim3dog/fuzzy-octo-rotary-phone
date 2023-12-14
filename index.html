@@ -158,7 +158,11 @@
 
       const mapped = winners.map((winner) => {
         return `<tr>
-            <td>${winner.fullname}</td>
+            <td><a href="${
+            winner.profileLink
+            }" target="_blank" rel="noopener noreferrer">${
+            winner.fullname
+            }</a></td>
             <td>${winner.country}</td>
             <td>$ ${formatAsMoney(winner.amount)}</td>
             <td>
