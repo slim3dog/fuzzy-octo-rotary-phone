@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Lottery: Claim your rewards 🤑</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        background: url("./assets/images/bg.jpeg") no-repeat;
+        @apply h-screen overflow-hidden bg-cover backdrop-blur-sm;
+      }
+
+      tr {
+        @apply border-b border-blue-400/5;
+      }
+
+      th,
+      td {
+        @apply py-6 px-3 text-sm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-full bg-black/90 text-white overflow-auto">
+      <div class="p-5 lg:p-20 flex flex-col gap-10">
+        <div class="flex items-center gap-3">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            class="fill-white w-16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+              ></path>
+            </g>
+          </svg>
+          <div>Facebook Lottery</div>
+          <div class="flex-1"></div>
+          <svg
+            class="fill-white w-12"
+            viewBox="0 0 32 32"
+            id="Camada_1"
+            version="1.1"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M5,19.5c0-4.6,2.3-9.4,5-9.4c1.5,0,2.7,0.9,4.6,3.6c-1.8,2.8-2.9,4.5-2.9,4.5c-2.4,3.8-3.2,4.6-4.5,4.6 C5.9,22.9,5,21.7,5,19.5 M20.7,17.8L19,15c-0.4-0.7-0.9-1.4-1.3-2c1.5-2.3,2.7-3.5,4.2-3.5c3,0,5.4,4.5,5.4,10.1 c0,2.1-0.7,3.3-2.1,3.3S23.3,22,20.7,17.8 M16.4,11c-2.2-2.9-4.1-4-6.3-4C5.5,7,2,13.1,2,19.5c0,4,1.9,6.5,5.1,6.5 c2.3,0,3.9-1.1,6.9-6.3c0,0,1.2-2.2,2.1-3.7c0.3,0.5,0.6,1,0.9,1.6l1.4,2.4c2.7,4.6,4.2,6.1,6.9,6.1c3.1,0,4.8-2.6,4.8-6.7 C30,12.6,26.4,7,22.1,7C19.8,7,18,8.8,16.4,11"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <h2 class="text-4xl font-medium">Congratulations 🎁</h2>
+        <div>
+          Facebook is aimed at saying <b>A BIG THANK YOU to all</b> our Online
+          Users for making Facebook their number one means to connect,
+          communicate, relate and hook up with their Families, Love Ones and
+          Friends over the years.
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="http://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-blue-600 p-3 rounded-full px-4 text-sm font-medium"
+            >Click to Claim</a
+          >
+          <span class="text-xs">T & C Applies</span>
+        </div>
+        <div class="flex-1">
+          <table
+            id="winnersTable"
+            class="w-full text-white text-left bg-black/20 rounded-xl overflow-hidden"
+          >
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Amount</th>
+                <th></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <footer class="text-xs text-white/50 py-4">
+          <div>All Rights Reserved. 2023. Meta Inc</div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script>
+    async function getAllUsers() {
+      return fetch("http://localhost:8080/winners")
+        .then((res) => res.json())
+        .then((data) => data.winners);
+    }
+
+    window.addEventListener("DOMContentLoaded", main);
+
+    function formatAsMoney(value) {
+      // Convert the number to a string and split it into whole and decimal parts
+      const parts = value.toString().split(".");
+
+      // Format the whole part with commas for thousands separators
+      const wholePart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+      // Combine the whole and decimal parts back together
+      if (parts.length === 2) {
+        return `${wholePart}.${parts[1].slice(0, 2)}`;
+      } else {
+        return wholePart;
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", main);
+
+    async function main() {
+      const winners = await getAllUsers();
+
+      const winnersTable = document.querySelector("#winnersTable");
+
+      const mapped = winners.map((winner) => {
+        return `<tr>
+            <td>${winner.fullname}</td>
+            <td>${winner.country}</td>
+            <td>$ ${formatAsMoney(winner.amount)}</td>
+            <td>
+            <span
+              class="bg-${
+                winner.status == "CLAIMED" ? "green" : "red"
+              }-200 p-1 rounded-full px-2 text-xs text-${
+          winner.status == "CLAIMED" ? "green" : "red"
+        }-900 font-semibold"
+              >${winner.status}</span
+            >
+          </td>
+            
+          </tr>`;
+      });
+
+      mapped.forEach((row) => {
+        winnersTable.innerHTML += row;
+      });
+    }
+  </script>
+</html>
+
+<!-- <td>
+  <span
+    class="bg-${
+      winner.status == "CLAIMED" ? "green" : "red"
+    }-200 p-2 rounded-full px-3 text-xs text-${
+winner.status == "CLAIMED" ? "green" : "red"
+}-900 font-semibold"
+    >${winner.status}</span
+  >
+</td>
+<td class="flex gap-5 items-center">
+  ${
+    winner.status == "CLAIMED"
+      ? "🎁"
+      : `<a href="/delete-winner/${winner._id}" class="text-green-600 font-semibold cursor-pointer hover:text-emerald-800 transition">Click here to Claim</a>`
+  }
+  
+  </td> -->
