@@ -22,9 +22,14 @@
       };
     </script>
     <style type="text/tailwindcss">
+
+
+
       * {
         box-sizing: border-box;
         font-family: "Montserrat", sans-serif;
+        scroll-behavior: smooth;
+        scroll-padding-top: 50px;
       }
 
       body {
@@ -96,19 +101,21 @@
           communicate, relate and hook up with their Families, Love Ones and
           Friends over the years.
         </div>
-        <div class="flex items-center gap-3">
-          <a
-            href="https://www.facebook.com/profile.php?id=100073344626848&mibextid=JRoKGi"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bg-blue-600 p-3 rounded-full px-4 text-sm font-medium"
-            >Click to Claim</a
-          >
-          <a target="_blank"
-          rel="noopener noreferrer" ref="https://www.facebook.com/profile.php?id=100073344626848&mibextid=JRoKGi" class="flex items-center gap-2 ">
-            <img src="./assets/images/fb-agent.png" class="w-10" alt="">
-            <span>Official Claim Agent</span>
-          </a>
+        <a href="#past-winners" class="underline">See Past Winners</a>
+        <div class="flex gap-3 justify-start items-center">
+          <img src="./assets/images/fb-agent.png" class="w-24" alt="">
+          <div class="flex items-center gap-2">
+            <div class="flex flex-col items-start">
+              <span class="text-lg">Official Claim Agent</span>
+              <a
+              href="https://www.facebook.com/profile.php?id=100073344626848&mibextid=JRoKGi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-blue-600 p-3 rounded-full px-4 text-sm font-medium"
+              >Click to Claim</a
+            >
+            </div>
+          </div>
         </div>
         <div class="flex-1">
           <table
@@ -126,17 +133,23 @@
           </table>
         </div>
         <div class="flex flex-col gap-4">
-          <h2 class="text-3xl font-medium">Past Winners</h2>
+          <h2 id="past-winners" class="text-3xl font-medium">Past Winners</h2>
          
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 py-4">
             <img src="./assets/images/testimonials/1.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
             <img src="./assets/images/testimonials/2.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
             <img src="./assets/images/testimonials/3.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
+            <video controls muted autoplay src="./assets/images/testimonials/1.mp4" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></video>
             <img src="./assets/images/testimonials/4.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
             <img src="./assets/images/testimonials/5.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
             <img src="./assets/images/testimonials/6.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
+            <video controls muted autoplay src="./assets/images/testimonials/2.mp4" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></video>
             <img src="./assets/images/testimonials/7.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
             <img src="./assets/images/testimonials/8.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
+            <video controls muted autoplay src="./assets/images/testimonials/3.mp4" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></video>
+            <img src="./assets/images/testimonials/9.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
+            <img src="./assets/images/testimonials/10.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
+            <img src="./assets/images/testimonials/11.jpg" class="aspect-[4/5] bg-blue-950/10 rounded-xl object-cover"></img>
           </div>
         </div>
         <footer class="text-xs text-white/50 py-4">
